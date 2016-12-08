@@ -157,10 +157,15 @@ Enable or disable the spinner. Useful for terminals that don't support them. Aut
 The API is here in case you want to wrap this with your CI toolset.
 
 ```js
-const npmCheck = require('npm-check');
+const npmCheck = require('npm-check-interactive');
 
 npmCheck(options)
-  .then(currentState => console.log(currentState.get('packages')));
+  .then(currentState => currentState.interactiveUpdate());
+
+//or
+
+npmCheck(options)
+  .then(currentState => currentState.staticOutput());
 ```
 
 #### `global`
