@@ -1,4 +1,4 @@
-npm-check
+npm-check-interactive
 =========
 [![Build Status](https://travis-ci.org/dylang/npm-check.svg?branch=master)](https://travis-ci.org/dylang/npm-check)
 [![NPM version](https://badge.fury.io/js/npm-check.svg)](http://badge.fury.io/js/npm-check)
@@ -6,6 +6,7 @@ npm-check
 [![npm](https://img.shields.io/npm/dm/npm-check.svg?maxAge=2592000)]()
 
 > Check for outdated, incorrect, and unused dependencies.
+> Branched from [dylang/npm-check](https://github.com/dylang/npm-check). Extends returned state, exposing staticOutput and interactiveUpdate function on the programmatic API 
 
 <img width="796" alt="npm-check -u" src="https://cloud.githubusercontent.com/assets/51505/9569917/96947fea-4f48-11e5-9783-2d78077256f2.png">
 
@@ -33,7 +34,7 @@ This is the easiest way to use `npm-check`.
 
 ### Install
 ```bash
-$ npm install -g npm-check
+$ npm install -g npm-check-interactive
 ```
 
 ### Use
